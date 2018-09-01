@@ -1,5 +1,9 @@
 {% extends "aldryn_newsblog/base.html" %}
 {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
+<<<<<<< HEAD
+=======
+
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 {% block title %}
     {{ article.title }} - {{ block.super }}
 {% endblock %}
@@ -8,6 +12,7 @@
 {% block newsblog_content %}
 
 
+<<<<<<< HEAD
   
 				
  
@@ -25,3 +30,17 @@
 
 {% endblock %}
  
+=======
+  				<div class="row">
+	<div class="large-10 large-centered columns">
+  			        {% include "aldryn_newsblog/artists/includes/article.html" with detail_view="true" %}
+		
+	
+</div>
+</div>
+ 
+	
+
+  
+{% endblock %}
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d

@@ -11,28 +11,24 @@
 
 {% for article in articles_list %}
 <li class="orbit-slide">
-							<header class="header" style="background-image: url(
+
 {% if article.featured_image_id %}
 {% else %}
     {% static 'img/post-bg.jpg' %}
 {% endif %}
-)">	
-						
+
+<br>
+<br>
+
 						
 		   	 			{% include "aldryn_newsblog/events/includes/featured.html" with namespace=instance.app_config.namespace%}
 		   	 			
-						
-						
-
-	
-	</header>
-	</li>
 	
 {% empty %}
     <p>{% trans "No items available" %}</p>
 {% endfor %}
 
-			
+	</li>		
   </ul>
  
  

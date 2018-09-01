@@ -2,27 +2,49 @@
 {% load i18n cms_tags apphooks_config_tags %}
 
 
+<<<<<<< HEAD
+=======
+      
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 
 <article class="article
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
+<<<<<<< HEAD
 	
+=======
+    	 
+
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
         {% if not detail_view %}
         
 				
            <h4>
             <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
+<<<<<<< HEAD
             	<img src="{% thumbnail article.featured_image 400x400 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
             	</a>
             </h4>
     
             	<h6> 
           	<a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "lead_in" "" "" "striptags" %}</a>
+=======
+            	<img src="{% thumbnail article.featured_image 300x201 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
+            	</a>
+            </h4>
+            
+            	<h6> 
+          	<a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "title" "" "" "striptags" %}</a>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
         {% else %}
            
         {% endif %}
     </h6>
+<<<<<<< HEAD
           
+=======
+      </div>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 
 
           
@@ -58,5 +80,10 @@
      
         
     {% endif %}
+<<<<<<< HEAD
 </article>
 </div>
+=======
+    
+</article>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d

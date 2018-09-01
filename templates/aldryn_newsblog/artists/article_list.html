@@ -5,6 +5,7 @@
 	
 	
 
+<<<<<<< HEAD
 {% block newsblog_content %}
 
 <br>
@@ -40,6 +41,46 @@
 </div>
 {% endblock %}
 
+=======
+
+{% block newsblog_content %}
+<br>
+<br>
+<div class="row large-collapsed">
+
+<div class="large-8 large-centered">
+
+		
+			
+	 {% for article in article_list %}
+    
+    	<div class="large-4 columns">
+    		
+
+    			
+
+             {% include "aldryn_newsblog/artists/includes/list_gallery.html" %} 
+				  {% empty %}
+  
+   </div>
+{% endfor %}  
+
+
+{% include "aldryn_newsblog/includes/pagination.html" %}
+</div>
+
+
+        	
+</div>
+
+  
+  </div> 
+
+{% endblock %}
+
+
+
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
     
 
 

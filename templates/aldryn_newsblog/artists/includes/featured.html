@@ -1,6 +1,10 @@
  {% load i18n staticfiles thumbnail cms_tags apphooks_config_tags %}
 {% load i18n cms_tags apphooks_config_tags %}
+<<<<<<< HEAD
 <div class="row">
+=======
+
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
 <article class="article
     {% if article.is_featured %} featured{% endif %}
     {% if not article.published %} unpublished{% endif %}">
@@ -11,6 +15,7 @@
 	
        	
 		
+<<<<<<< HEAD
 			<div class="large-12 columns">
      	
       
@@ -30,6 +35,19 @@
       
     </div>      	
             
+=======
+		
+			<h2  >
+            <a class="aw a5w"  href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">{% render_model article "title" %}
+            	
+            	</a>
+            	</h2>
+            	<hr>
+          <h4 > 
+          	
+          	<a class="aw a5w" href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"> {% render_model article "lead_in" "" "" "striptags" %}</a>
+      		</h4>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
      
    
 
@@ -75,7 +93,11 @@
     <br>
       
   			
+<<<<<<< HEAD
 		
+=======
+		</div>
+>>>>>>> f19a4b55a8b2fa6103cc4e084ef01fa1fe32999d
         
     {% endif %}
 </article>

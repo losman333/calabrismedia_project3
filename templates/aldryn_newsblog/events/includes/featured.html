@@ -6,24 +6,23 @@
     {% if not article.published %} unpublished{% endif %}">
 	
         {% if not detail_view %}
-        
+
 	
-	<div class="large-12 medium-12 small-12 large-expanded small-centered columns">
-			<h4>
-				<div class="large-12 medium-12 small-12 columns">
-				<a class="aw1 a5w"  href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}"><img src="{% thumbnail article.featured_image 1200x400 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}">
-				</div>	
-				</a>
-				
-            	
-            	
-            	</h4>
-            	
-          <h6 > 
-          	
-      		</h6>
-     
-     </div>      
+	<div class="row">
+    	
+    		<div class="large-12 columns">
+    			  	
+	                      <a href="{% namespace_url 'article-detail' article.slug namespace=namespace default='' %}">
+
+				<img src="{% thumbnail article.featured_image 1200x450 crop subject_location=article.featured_image.subject_location %}" alt="{{ article.featured_image.alt }}"> 
+</a>
+		
+
+	
+		
+   </div>
+</div>
+                
    
 
         {% else %}
