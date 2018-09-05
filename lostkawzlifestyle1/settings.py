@@ -227,22 +227,18 @@ DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     
 
 
-<<<<<<< HEAD
 STATIC_ROOT = 'lostkawzlifestyle1/static/'
 =======
 STATIC_ROOT = 'lostkawzlifestyle1/staticfiles/'
->>>>>>> c7e77f210433759818e213295750597d8a0a59d2
 
 STATICFILES_LOCATION = 'static'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
-<<<<<<< HEAD
 STATIC_URL = '/static/'
 
 "https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
-=======
 STATIC_URL = "https://%s/%s/" % (AWS_CLOUDFRONT_DOMAIN, STATICFILES_LOCATION)
->>>>>>> c7e77f210433759818e213295750597d8a0a59d2
+
 
 
 
@@ -259,9 +255,7 @@ STATICFILES_DIRS = [
 
 db_from_env = dj_database_url.config(conn_max_age=500)
 DATABASES['default'].update(db_from_env)
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> c7e77f210433759818e213295750597d8a0a59d2
+
