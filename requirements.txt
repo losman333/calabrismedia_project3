@@ -19,7 +19,7 @@ cssselect==1.0.3
 cssutils==1.0.2
 dj-database-url==0.4.2
 dj-static==0.0.6
-Django==1.10.8
+Django==1.11.29
 django-absolute==0.3
 django-appconf==1.0.2
 django-appdata==0.1.6
